@@ -3,7 +3,7 @@
 
 ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
-
+die('fs');
 require_once ('soapclient/SforceEnterpriseClient.php'); // Include the Salesforce PHP Toolkit
 
 
