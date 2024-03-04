@@ -55,7 +55,10 @@ mkdir($upload_dir, 0777, true);
 
 // Destination path where the file will be saved
 $destination_path = $upload_dir . $file_name.'.mp4';
-
+echo $url ; 
+echo "<br>";
+echo $destination_path ; 
+die;
 copy($url, $destination_path);
 
 // Check if the file was downloaded and saved successfully
