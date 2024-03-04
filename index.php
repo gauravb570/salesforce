@@ -42,47 +42,33 @@ function generateRandomString($length = 10) {
 }
 
 
- echo "<pre>";
- print_r($response->records);
- die;
-//foreach ($response->records as $record) {
+foreach ($response->records as $record) {
 	
-		$url = "https://flexis4-dev-ed.develop.file.force.com/sfc/dist/version/download/?oid=00DWx000000Tprx&ids=068Wx00000047kT&d=%2Fa%2FWx00000005fd%2F.oclrC7exp4OWMW24_NNXQoPLoGAbedCD_kDDAcOoPc&asPdf=false" ;
-	// $data = file_get_contents($url);
-	$upload_dir = 'files/test1.mp4';
-copy($url, $upload_dir);
-
-die('sdf');
-$file_name = generateRandomString()  ; 
-
-// Directory where you want to save the downloaded file
-$upload_dir = 'files/';
+    $url =  $record->URL__c;
+    $file_name = generateRandomString(); 
+    $upload_dir = 'files/';
 
 // Check if the directory exists, if not, create it
 if (!file_exists($upload_dir)) {
-    mkdir($upload_dir, 0777, true);
+mkdir($upload_dir, 0777, true);
 }
 
 // Destination path where the file will be saved
 $destination_path = $upload_dir . $file_name.'.mp4';
 
-// Download the file from the URL
-//$file_content = file_get_contents($url);
-
-// Save the downloaded file to the destination path
-file_put_contents($destination_path, $data);
+copy($url, $destination_path);
 
 // Check if the file was downloaded and saved successfully
 if (file_exists($destination_path)) {
-    echo "File downloaded and saved successfully.";
+echo "File downloaded and saved successfully.";
 
 } else {
-    echo "Failed to download or save the file.";
+echo "Failed to download or save the file.";
 }
 
 
-    
-//}
+
+}
 
 
 
