@@ -1,3 +1,7 @@
-<?phpdie('sfs');
-
-?>
+<?php
+
+die('sfs');
+
+
+?>
+
