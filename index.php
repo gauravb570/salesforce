@@ -1,5 +1,19 @@
 <?php
 
+use Kunnu\Dropbox\Dropbox;
+
+use Kunnu\Dropbox\DropboxApp;
+
+use Kunnu\Dropbox\DropboxFile;
+
+// Dropbox App Configuration
+
+$dropboxKey = 'iw2jfx88rfdzzd2';
+
+$dropboxSecret = '9shhh6ng05evwhd';
+
+$accessToken = 'sl.BwkURiJvEES3DOxX5RxnW39QSCfhjpkCVL0qMEs4NoFlU_68laSiB4_-ZRX8c4tXK8-YqXHKkxnCYIdRRU697lfG8nviG8AA6MkGR8bWzlRnbGHbofuyJ4yZJbXMYBpSeI_h_ZD1IC2SvQhFWXVq9to';
+
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -52,8 +66,60 @@ mkdir($upload_dir, 0777, true);
 }
 
 // Destination path where the file will be saved
-$destination_path = $upload_dir . $file_name.'.mp4';
+$destination_path =  $file_name.'.mp4';
 
+
+
+// Create Dropbox App instance
+
+$app = new DropboxApp($dropboxKey, $dropboxSecret, $accessToken);
+
+
+
+// Create Dropbox instance
+
+$dropbox = new Dropbox($app);
+
+
+
+// Local file path
+
+$localFilePath = $url;
+
+
+
+// Remote file path (where you want to store the file in Dropbox)
+
+$remoteFilePath = $destination_path;
+
+
+
+// Create DropboxFile instance
+
+$dropboxFile = new DropboxFile($localFilePath);
+
+
+
+
+
+// Upload the file
+
+$fileMetadata = $dropbox->upload($dropboxFile, $remoteFilePath, ['autorename' => true]);
+
+
+
+// Check if the upload was successful
+
+if ($fileMetadata) {
+
+    echo "File uploaded successfully!";
+
+} else {
+
+    echo "Error uploading file.";
+
+}
+/*
 copy($url, $destination_path);
 
 // Check if the file was downloaded and saved successfully
@@ -63,7 +129,7 @@ echo "File downloaded and saved successfully.";
 } else {
 echo "Failed to download or save the file.";
 }
-
+*/
 
 
 }
