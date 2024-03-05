@@ -13,7 +13,7 @@ $dropboxKey = 'iw2jfx88rfdzzd2';
 
 $dropboxSecret = '9shhh6ng05evwhd';
 
-$accessToken = 'sl.BwkURiJvEES3DOxX5RxnW39QSCfhjpkCVL0qMEs4NoFlU_68laSiB4_-ZRX8c4tXK8-YqXHKkxnCYIdRRU697lfG8nviG8AA6MkGR8bWzlRnbGHbofuyJ4yZJbXMYBpSeI_h_ZD1IC2SvQhFWXVq9to';
+$accessToken = 'sl.Bw1_judT3Q7lQZG847KsoiBKFoaCVV8NrKrKYCrI3vQEJ9h_voadAy6AjMI2BVMgsFIQRVGJ4laX_bfDutZQxC0o6Rhqcss5Al1bMtArWnnFmjm7qCi3-7IRaO-Cr0qHI_xWgOnCHSwERn86UJjlWfk';
 
 
 ini_set('display_errors', 1);
