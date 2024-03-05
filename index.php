@@ -81,13 +81,13 @@ $dropbox = new Dropbox($app);
 
 // Local file path
 
-$localFilePath = $url;
+$localFilePath = "newbilli.jpg";
 
 
 
 // Remote file path (where you want to store the file in Dropbox)
 
-$remoteFilePath = $destination_path;
+$remoteFilePath = "/newbilli.jpg";
 
 
 
