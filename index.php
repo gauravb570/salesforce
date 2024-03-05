@@ -13,8 +13,7 @@ $dropboxKey = 'ar7lvhjvmvz1ptq';
 
 $dropboxSecret = 'nsm5scsw1q5o8vc';
 
-$accessTokendrop = 'sl.Bw0CSLb6rPRYgadsbzbXgacGzuT7Ta82Wuui7JdQePK2m9b7u_pgHl5MEP3u-Yj0bUYfBp9bYvaKCPnx5IuQ1hmbit41Y_cicL9T5z02vhWiSIIRaqkCc_kU-puCgNzy9Onc8vYL3g8CLNK_R8g4PqY';
-
+$accessTokendrop = 'sl.Bw1aakXomiQrkfXaPFaPeUmUdi-VTFaUPENIdf-aBHG9HjUuxzrScM8v8xQqzmWDt8VCmnHewhIk4vBCpnNL82JanYrMlFLZBancxrXkh7RCbAQoEp-DiyPuT3FSCOjNG61T3SWsjg1ZYmiSt8utXVc';
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
