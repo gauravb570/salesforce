@@ -59,12 +59,8 @@ foreach ($response->records as $record) {
 	
     $url =  $record->URL__c;
     $file_name = generateRandomString(); 
-    $upload_dir = 'files/';
+    
 
-// Check if the directory exists, if not, create it
-if (!file_exists($upload_dir)) {
-mkdir($upload_dir, 0777, true);
-}
 
 // Destination path where the file will be saved
 $destination_path =  "/".$file_name.'.mp4';
