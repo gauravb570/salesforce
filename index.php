@@ -67,7 +67,7 @@ mkdir($upload_dir, 0777, true);
 }
 
 // Destination path where the file will be saved
-$destination_path =  $file_name.'.mp4';
+$destination_path =  "/".$file_name.'.mp4';
 
 
 
