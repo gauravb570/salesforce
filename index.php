@@ -9,11 +9,11 @@ use Kunnu\Dropbox\DropboxFile;
 
 // Dropbox App Configuration
 
-$dropboxKey = 'iw2jfx88rfdzzd2';
+$dropboxKey = 'ar7lvhjvmvz1ptq';
 
-$dropboxSecret = '9shhh6ng05evwhd';
+$dropboxSecret = 'nsm5scsw1q5o8vc';
 
-$accessTokendrop = 'sl.Bw2ontSyqSca0fyAXJO5E2muhg4Tzl15DyCvj8M89vMuwO0u7lYU8r7GT-DyJrl3dac32WDAuGAWDFeYYXW2bEEoIiX4eMXEAGekDouMpgVOEG0KpLvfTRdGSpK_QC-bRmsXuNv32KX6Kw0ULfN-Cxw';
+$accessTokendrop = 'sl.Bw0CSLb6rPRYgadsbzbXgacGzuT7Ta82Wuui7JdQePK2m9b7u_pgHl5MEP3u-Yj0bUYfBp9bYvaKCPnx5IuQ1hmbit41Y_cicL9T5z02vhWiSIIRaqkCc_kU-puCgNzy9Onc8vYL3g8CLNK_R8g4PqY';
 
 
 ini_set('display_errors', 1);
