@@ -8,12 +8,14 @@
         "illuminate/collections": "^8.0|^9.0|^10.0"
     },
     "autoload": {
-        "classmap": [
-           "soapclient"
-        ],
+        
         "psr-4": {
             "Kunnu\\Dropbox\\": "src/Dropbox"
-        }
+        },
+        "classmap": [
+           "soapclient"
+        ]
+        
     },
     "extra": {
         "branch-alias": {
