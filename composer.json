@@ -1,11 +1,19 @@
 {
     "name": "developerforce/force.com-toolkit-for-php",
     "description": "A wrapper for the Force.com Web Services SOAP API",
+    "keywords" : ["dropbox", "sdk", "api", "client", "php", "unofficial"],
     "license": "BSD-3-Clause",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0|~7.0",
+        "illuminate/collections": "^8.0|^9.0|^10.0"
+    },
     "autoload": {
         "classmap": [
            "soapclient"
-        ]
+        ],
+        "psr-4": {
+            "Kunnu\\Dropbox\\": "src/Dropbox"
+        }
     },
     "extra": {
         "branch-alias": {
