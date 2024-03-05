@@ -13,7 +13,7 @@ $dropboxKey = 'iw2jfx88rfdzzd2';
 
 $dropboxSecret = '9shhh6ng05evwhd';
 
-$accessToken = 'sl.Bw1_judT3Q7lQZG847KsoiBKFoaCVV8NrKrKYCrI3vQEJ9h_voadAy6AjMI2BVMgsFIQRVGJ4laX_bfDutZQxC0o6Rhqcss5Al1bMtArWnnFmjm7qCi3-7IRaO-Cr0qHI_xWgOnCHSwERn86UJjlWfk';
+$accessTokendrop = 'sl.Bw3bXfzUA6jbFpCGhnAX-oxtiLm9MYJ7NH4xFEDQJhJrZ6jEmnqeWQ7V7M5qACKpgXT0MLGJYVmz-Dgj0g7s2WOiFtqTq7Yc7YCVdrb2RFrPfNBqGv5bQR_sVyElgL3pu9QzUVxWV7JzscQhKwe9MmU';
 
 
 ini_set('display_errors', 1);
@@ -69,7 +69,7 @@ $destination_path =  "/".$file_name.'.mp4';
 
 // Create Dropbox App instance
 
-$app = new DropboxApp($dropboxKey, $dropboxSecret, $accessToken);
+$app = new DropboxApp($dropboxKey, $dropboxSecret, $accessTokendrop);
 
 
 
